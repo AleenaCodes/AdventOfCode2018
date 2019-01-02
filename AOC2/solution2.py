@@ -17,16 +17,9 @@ for x in range(numOfBoxIDs):
     for y in range(numOfBoxIDs):
         numDiff = lengthOfBoxID
         if (x != y):
-            # print("x is " + listofBoxIDs[x])
-            # print("y is " + listofBoxIDs[y])
-
             for c in range(lengthOfBoxID):
-                # print("listofBoxIDs[x][c] is " + listofBoxIDs[x][c])
-                # print("listofBoxIDs[y][c] is " + listofBoxIDs[y][c])
                 if (listofBoxIDs[x][c] == listofBoxIDs[y][c]):
                     numDiff = numDiff - 1
-                    # print("incrementing numDiff down to" + str(numDiff))
-        # print("for x is " + listofBoxIDs[x] + " and y is " + listofBoxIDs[y] + " the numDiff is " + str(numDiff))
 
         if (numDiff == 1):
             indexFirst = x
